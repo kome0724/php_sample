@@ -18,9 +18,26 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<?php
+<table>
+	<?php
+	for($i=1; $i<=10; $i++){
+		if($i % 3){
+			print('<tr style="background-color: #ccc">');
+		}else{
+			print('<tr>');
+		}
+		print('<td>'.$i.'行目</td>');
+		print('</tr>');
+	}
+	?>
+</table>
 
-?>
+<!-- <?php
+	$week = array('金','土','日','月','火','水','木');
+	for($i=0; $i<31; $i++){
+	print($week[$i]."\n");
+	}
+?> -->
 </pre>
 </main>
 </body>

@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!doctype html>
 <html lang="ja">
 <head>
@@ -6,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 
 <title>PHP</title>
 </head>
@@ -19,7 +22,7 @@
 <h2>Practice</h2>
 <pre>
 <?php
-
+	print($_SESSION['session_message']);
 ?>
 </pre>
 </main>
